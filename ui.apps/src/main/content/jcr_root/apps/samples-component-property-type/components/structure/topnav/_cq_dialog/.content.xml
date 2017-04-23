@@ -20,6 +20,12 @@
                         defaultValue=""
                         fieldLabel="Parent Level (absolute)"
                         name="./absParent"/>
+                    <absParentTypeHint
+                    	ignoreData="true"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+                        value="Long"                        
+                        name="./absParent@TypeHint"/>	    
                 </items>
             </column>
         </items>

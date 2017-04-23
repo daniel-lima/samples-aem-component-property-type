@@ -9,5 +9,11 @@
             fieldLabel="Parent Level (absolute)"
             name="./absParent"
             xtype="numberfield"/>
+        <absParentTypeHint
+    		jcr:primaryType="cq:Widget"
+    		ignoreData="{Boolean}true"
+    		name="./absParent@TypeHint"
+    		value="Long"
+    		xtype="hidden"/>	
     </items>
 </jcr:root>
