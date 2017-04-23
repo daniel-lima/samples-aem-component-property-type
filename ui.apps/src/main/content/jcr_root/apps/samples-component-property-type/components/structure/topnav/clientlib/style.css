@@ -1,0 +1,12 @@
+
+.topnav {
+    float: right;
+    list-style: none;
+}
+.topnav__item {
+    float: left;
+    margin-left: 15px;
+}
+.topnav__item--selected {
+    font-weight: bold;
+}

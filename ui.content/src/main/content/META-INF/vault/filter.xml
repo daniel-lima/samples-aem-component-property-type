@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/content/samples-component-property-type"/>
+    <filter root="/content/dam/samples-component-property-type"/>
+</workspaceFilter>

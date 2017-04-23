@@ -1,0 +1,5 @@
+<ul class="topnav" data-sly-use.topnav="topnav.js" data-sly-list="${topnav.items}">
+    <li class="topnav__item ${item.selected && 'topnav__item--selected'}">
+        <a class="topnav__link" href="${item.page.path}.html">${item.page.title}</a> 
+    </li>
+</ul>
