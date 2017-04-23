@@ -2,7 +2,18 @@
 // Server-side JavaScript for the topnav logic
 use(function () {
     var items = [];
-    var root = currentPage.getAbsoluteParent(1);
+	
+	// get starting point of navigation
+    var absParent = properties.get('absParent', 1);
+    var root = currentPage.getAbsoluteParent(absParent);
+    
+    if (log.isDebugEnabled()) {
+    	log.debug('absParent = {}, root.getPath() = {}', absParent, root? root.getPath(): null);
+    }
+
+    //if not deep enough take current node
+    if (!root) {root=currentPage;}
+
     var currentNavPath = currentPage.getAbsoluteParent(2).getPath();
     var it = root.listChildren(new Packages.com.day.cq.wcm.api.PageFilter());
 

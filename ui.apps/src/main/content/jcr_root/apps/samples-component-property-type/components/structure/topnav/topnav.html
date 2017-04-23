@@ -3,3 +3,5 @@
         <a class="topnav__link" href="${item.page.path}.html">${item.page.title}</a> 
     </li>
 </ul>
+<!--/* The component should be selectable for edition even if has no items. */-->
+<ul class="topnav" data-sly-test.author="${wcmmode.edit || wcmmode.design}" data-sly-test.x="${author && !topnav.items}"></ul>
